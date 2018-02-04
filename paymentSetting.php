@@ -61,7 +61,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="paymentSetting.php"><i class="material-icons">local_atm</i> Payment Settings </a>
+                    <a class="navbar-brand" href="paymentSetting.php"><i class="material-icons">local_atm</i> Job History </a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -76,18 +76,21 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header" data-background-color="green">
-                                <h4 class="title">Your Credit Cards</h4>
-                                <p class="category">Add or Remove a Payment Method</p>
+                                <h4 class="title">Job History</h4>
+                                <p class="category">List of Past Jobs</p>
                             </div>
                             <div class="card-content">
                                 <div class="table-responsive">
                                     <table class="table">
                                         <thead>
                                             <tr class="text-success">
-                                                <th>Card Holder</th>
-                                                <th>Card Type</th>
-                                                <th>Card No.</th>
-                                                <th>Expiry Date</th>
+                                                <th>Job No.</th>
+                                                <th>Fault Type</th>
+                                                <th>Start Time</th>
+                                                <th>End Time</th>
+                                                <th>Location</th>
+                                                <th>Travel Time</th>
+                                                <th>Job Payout</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -113,10 +116,13 @@
 //                                                } else {
 //                                                    ?>
                                                     <tr>
-                                                        <td>Name</td>
-                                                        <td>Card Type</td>
-                                                        <td>Card No.</td>
-                                                        <td>Expiry Date</td>
+                                                        <th>Job No.</th>
+                                                        <th>Fault Type</th>
+                                                        <th>Start Time</th>
+                                                        <th>End Time</th>
+                                                        <th>Location</th>
+                                                        <th>Travel Time</th>
+                                                        <th>Job Payout</th>
                                                     </tr>
                                                    <?php
 //                                                }                                               
@@ -124,9 +130,9 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="">
+<!--                                <div class="">
                                     <a><button type="button" class="btn button" data-toggle="modal" data-target="#addCardModal"><i class="fa fa-plus" aria-hidden="true"></i> Add Card</button></a>
-                                </div>
+                                </div>-->
                                 <div id="addCardModal" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
                                         <!-- Modal content-->
