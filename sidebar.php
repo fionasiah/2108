@@ -34,16 +34,16 @@
                     <p>Dashboard</p>
                 </a>
             </li>
-            <li <?php if (strpos($_SERVER['SCRIPT_NAME'], 'MonthlyStatement.php') !== false) : ?>class="active"<?php endif; ?>>
-                <a href="MonthlyStatement.php">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                    <p>Monthly Statement</p>
+            <li <?php if (strpos($_SERVER['SCRIPT_NAME'], 'jobs.php') !== false) : ?>class="active"<?php endif; ?>>
+                <a href="jobs.php">
+                    <i class="fa fa-folder-open" aria-hidden="true"></i>
+                    <p>Jobs</p>
                 </a>
             </li>
             <li class="dropdown sidebar-dropdown">
                 <a href="#" class="dropdown-toggle <?php if ((strpos($_SERVER['SCRIPT_NAME'], 'utility-electricity.php') !== false) || (strpos($_SERVER['SCRIPT_NAME'], 'utility-water.php') !== false) || (strpos($_SERVER['SCRIPT_NAME'], 'utility-gas.php') !== false)) : ?>ddown-active<?php endif; ?>" data-toggle="dropdown">
                     <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                    <p>My Utilities<b class="caret"></b></p>
+                    <p>Engineers<b class="caret"></b></p>
                 </a>
                 <ul class="dropdown-menu">
                     <li <?php if (strpos($_SERVER['SCRIPT_NAME'], 'utility-electricity.php') !== false) : ?>class="active"<?php endif; ?>>
