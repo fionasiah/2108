@@ -13,7 +13,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="jobDetail.php?jobid=0001"> Job Details - #0001</a>
+                    <a class="navbar-brand" href="jobDetail.php?jobid=0001"> Job Details</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -26,83 +26,300 @@
         </nav>
         <div class='content'>
             <div class='container-fluid'>
-                <!-- accordion start -->
-                <!-- ================ -->
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header" data-background-color="green">
+                        <h4 class="title">Job #0001</h4>
+                    </div>
+                    <div class="card-content">
+                        <!-- accordion start -->
+                    <!-- ================ -->
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="more-less glyphicon glyphicon-plus"></i>
-                                    Engineer
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                <table class="table table-responsive">
-                                    <tbody>
-                                        <tr>
-                                            <td>Name</td>
-                                            <td>John Doe</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Username</td>
-                                            <td>User</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Role</td>
-                                            <td>Role</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Email</td>
-                                            <td>Email</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Password</td>
-                                            <td>pass</td>
-                                        </tr>
-                                    <tbody>
-                                    </table>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        Engineer Profile
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <div class="col-md-4">
+                                        <div class="card card-profile">
+                                            <div class="card-avatar">
+                                                <a href="#pablo">
+                                                    <img class="img" src="assets/img/faces/marc.jpg" alt="Profile photo"/>
+                                                </a>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-md-10 col-md-offset-1">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Employee ID</label>
+                                                                <input type="text" name="username" class="form-control" value="EN-1234567<?php //echo $username ?>" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-md-offset-1">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">First Name</label>
+                                                                <input type="text" name="firstName" class="form-control" value="John" disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-md-offset-2">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Last Name</label>
+                                                                <input type="text" name="lastName" class="form-control" value="Doe" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-md-offset-1">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Contact Number</label>
+                                                                <input type="number" name="contact" class="form-control" value="1234-5678" disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-md-offset-2">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Email</label>
+                                                                <input type="text" name="email" class="form-control" value="johndoe@gmal.com" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <i class="more-less glyphicon glyphicon-plus"></i>
-                                    Collapsible Group Item #2
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        Job Details
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <div class="col-md-10">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-offset-1">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Job Number</label>
+                                                        <input type="text" name="jobId" class="form-control" value="0001" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-offset-1">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Job Description</label>
+                                                        <textarea type="text" name="jobId" class="form-control" rows="10" disabled>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                        </textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 col-md-offset-1">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Urgency</label>
+                                                        <input type="text" name="urgency" class="form-control" value="Urgent" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-md-offset-2">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Fault Type</label>
+                                                        <input type="text" name="status" class="form-control" value="Type 5" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-10 col-md-offset-1">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Status</label>
+                                                        <input type="text" name="jobId" class="form-control" value="In-Progress" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 col-md-offset-1">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Start Date</label>
+                                                        <input type="datetime" name="contact" class="form-control" value="05/02/2018" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-md-offset-2">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">End Date</label>
+                                                        <input type="datetime" name="lastName" class="form-control" value="-" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <i class="more-less glyphicon glyphicon-plus"></i>
-                                    Collapsible Group Item #3
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        Client Profile
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <div class="col-md-4">
+                                        <div class="card card-profile">
+                                            <div class="card-avatar">
+                                                <a href="#pablo">
+                                                    <img class="img" src="assets/img/faces/marc.jpg" alt="Profile photo"/>
+                                                </a>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-md-10 col-md-offset-1">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Employee ID</label>
+                                                                <input type="text" name="username" class="form-control" value="EN-1234567<?php //echo $username ?>" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-md-offset-1">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">First Name</label>
+                                                                <input type="text" name="firstName" class="form-control" value="John" disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-md-offset-2">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Last Name</label>
+                                                                <input type="text" name="lastName" class="form-control" value="Doe" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-md-offset-1">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Contact Number</label>
+                                                                <input type="number" name="contact" class="form-control" value="1234-5678" disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-md-offset-2">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Email</label>
+                                                                <input type="text" name="email" class="form-control" value="johndoe@gmal.com" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        Scheduler Profile
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <div class="col-md-4">
+                                        <div class="card card-profile">
+                                            <div class="card-avatar">
+                                                <a href="#pablo">
+                                                    <img class="img" src="assets/img/faces/marc.jpg" alt="Profile photo"/>
+                                                </a>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-md-10 col-md-offset-1">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Employee ID</label>
+                                                                <input type="text" name="username" class="form-control" value="EN-1234567<?php //echo $username ?>" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-md-offset-1">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">First Name</label>
+                                                                <input type="text" name="firstName" class="form-control" value="John" disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-md-offset-2">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Last Name</label>
+                                                                <input type="text" name="lastName" class="form-control" value="Doe" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-md-offset-1">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Contact Number</label>
+                                                                <input type="number" name="contact" class="form-control" value="1234-5678" disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-md-offset-2">
+                                                            <div class="form-group label-floating">
+                                                                <label class="control-label">Email</label>
+                                                                <input type="text" name="email" class="form-control" value="johndoe@gmal.com" disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                </div><!-- panel-group -->
-                <!-- accordion end -->
+                    </div><!-- panel-group -->
+                    <!-- accordion end -->
+                    </div>
+                </div>
+                
         </div>
     </div>
 </div>

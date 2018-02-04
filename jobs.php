@@ -37,9 +37,12 @@ function jobs($jobId) {
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <form method="POST">
-                        <h4>Available Jobs:</h4>
-                        <hr>
+                    <div class="card">
+                        <div class="card-header" data-background-color="green">
+                            <h4 class="title">Available Job</h4>
+                        </div>
+                        <div class="card-content">
+                            <form method="POST">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <!--Table-->
                             <table id="tblJobs" class="table table-bordered table-hover">
@@ -78,6 +81,9 @@ function jobs($jobId) {
                             </table>
                         </div>
                     </form>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
