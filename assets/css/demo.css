@@ -1,0 +1,30 @@
+.sidebar-dropdown .dropdown-menu {
+    left: 0%;
+    right: 0;
+    margin: auto;
+    width: 90%;
+}
+
+.navbar-absolute {
+    border-radius: 0;
+}
+
+.card-stats .card-header i {
+    font-size: 48px;
+}
+
+.dashboard-progress, .dashboard-progress-two {
+    margin-bottom: 0;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.dashboard-progress-title {
+    margin: 0;
+}
