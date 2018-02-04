@@ -23,7 +23,7 @@
                     <li <?php if (strpos($_SERVER['SCRIPT_NAME'], 'paymentSetting.php') !== false) : ?>class="active"<?php endif; ?>>
                         <a href="paymentSetting.php">
                             <i class="material-icons">local_atm</i>
-                            <p>Payment Settings</p>
+                            <p>Job History</p>
                         </a>
                     </li>
                 </ul>

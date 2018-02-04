@@ -55,7 +55,7 @@ include('header.php');
                                     <p class="category"><span class="text-success"><i class="fa fa-wrench"></i> </span><?php // echo round(($totalSumPrev +13.22), 2); ?></p>
                                 </div>
                                 <div class="card-footer">
-                                    <span class="dashboard-title"><p><span class="badge">February</span>Previous Month</p></span>
+                                    <span class="dashboard-title"><p><span class="badge badge-danger">February</span>Previous Month</p></span>
                                 </div>
                             </div>
                         </div>
