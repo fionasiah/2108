@@ -20,7 +20,7 @@ include('header.php');
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="dashboard.php"><i class="material-icons">dashboard</i> Dashboard </a>
+                        <a class="navbar-brand" href="index.php"><i class="material-icons">dashboard</i> Dashboard </a>
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -36,33 +36,33 @@ include('header.php');
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
-                            <div class="card card-stats">
+<!--                            <div class="card card-stats">
                                 <div class="card-content">
                                     <div class="card-header dashboard-card-header" data-background-color="green">
                                         <i class="material-icons">monetization_on</i>
                                     </div>
                                     <p class="category">Expected Expenditure</p>
-                                    <h3 class="title dashboard-title">100 SGD<small><p><span class="badge">Month</span>Current Month</p></small></h3>
+                                    <h3 class="title dashboard-title">100<small><p><span class="badge">February</span>Current Month</p></small></h3>
                                 </div>                        
-                            </div>
+                            </div>-->
                             <div class="card">
                                 <div class="card-header" data-background-color="green">
-                                    <h4 class="title text-center">Utility Usage & Expenditure</h4>
+                                    <h4 class="title text-center">Fault Incident type</h4>
                                 </div>
                                 <div class="card-content">
                                     <canvas id="doughnut_chart"  height="298"></canvas>
-                                    <h4 class="title">Total Cost</h4>
-                                    <p class="category"><span class="text-success"><i class="fa fa-money"></i> </span><?php echo round(($totalSumPrev +13.22), 2); ?> SGD</p>
+                                    <h4 class="title">Total Faults</h4>
+                                    <p class="category"><span class="text-success"><i class="fa fa-wrench"></i> </span><?php // echo round(($totalSumPrev +13.22), 2); ?></p>
                                 </div>
                                 <div class="card-footer">
-                                    <span class="dashboard-title"><p><span class="badge">Month name</span>Previous Month</p></span>
+                                    <span class="dashboard-title"><p><span class="badge">February</span>Previous Month</p></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-8">
                             <div class="card">
                                 <div class="card-header" data-background-color="red">
-                                    <h4 class="title">2017 Utility Usage</h4>
+                                    <h4 class="title">2018 Fault frequency</h4>
                                 </div>
                                 <div class="card-content">
                                     <canvas id="line_chart" height="260"></canvas>
@@ -75,7 +75,7 @@ include('header.php');
                         <div class="card-content">
                             <div class="row mb20">
                                 <div class="col-md-3">
-                                    <h4 class="dashboard-progress-title">Today's Usage:<br><small>175 SGD</small></h4>
+                                    <h4 class="dashboard-progress-title">This Week's Faults:<br><small>175</small></h4>
                                 </div>
                                 <div class="col-md-9">
                                     <div class="progress dashboard-progress">
@@ -93,7 +93,7 @@ include('header.php');
                             </div>
                             <div class="row">
                                 <div class="col-md-3">
-                                    <h4 class="dashboard-progress-title">Average Daily Usage:<br><small>100 SGD</small></h4>
+                                    <h4 class="dashboard-progress-title">Average Daily Faults:<br><small>30 </small></h4>
                                 </div>
                                 <div class="col-md-9">
                                     <div class="progress dashboard-progress-two">
@@ -121,7 +121,7 @@ include('header.php');
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>
-                            The SWEG way of life.
+                            ICT2108 Team 3.
                         </p>
                     </div>
                 </footer>
@@ -144,7 +144,7 @@ include('header.php');
             type: 'doughnut',
             data: {
                 datasets: [{
-                        data: <?php echo json_encode($data); ?>
+                        data: [55,35,15]<?php // echo json_encode($data); ?>
                         ,
                         backgroundColor: [
                             '#26c6da',
@@ -154,9 +154,9 @@ include('header.php');
                         label: 'Dataset 1'
                     }],
                 labels: [
-                    "Water",
-                    "Electricity",
-                    "Gas",
+                    "Mechanical",
+                    "Electrical",
+                    "Telecommunication",
                 ]
             },
             options: {
@@ -183,7 +183,7 @@ include('header.php');
             labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
             datasets: [{
                     label: "Amount",
-                    data: <?php echo json_encode($lineData); ?>,
+                    data: [55,72,107,45,53,64,250,400,10,35,51,90]<?php //echo json_encode($lineData); ?>,
                     lineTension: 0,
                     fill: true,
                     borderColor: 'orange',

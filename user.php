@@ -126,7 +126,7 @@
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>
-                            The SWEG way of life.
+                            ICT2108 Team 3.
                         </p>
                     </div>
                 </footer>
