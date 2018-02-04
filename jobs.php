@@ -47,7 +47,7 @@ function jobs($jobId) {
                             <!--Table-->
                             <table id="tblJobs" class="table table-bordered table-hover">
                                 <thead>
-                                    <tr id="ddlJobs">
+                                    <tr id="ddlJobs"  class="text-success">
                                         <th rowspan="2">Urgency</th>
                                         <th rowspan="2">Engineer Name</th>
                                         <th rowspan="2">Location</th>
@@ -57,7 +57,7 @@ function jobs($jobId) {
                                         <!--For filter bar-->
                                         <th></th>
                                     </tr>
-                                    <tr>
+                                    <tr class="text-success">
                                         <th>Fault Type</th>
                                     </tr>
                                 </thead>

@@ -1,52 +1,4 @@
-<!-- Done by Jerome 16SIC015U -->
-<?php
-//session_start();
-//if (isset($_SESSION['email'])) {
-//    include('dbfunction.php');
-    include('header.php'); 
-//    $conn = dbconnect();
-//    $user = $_SESSION['email'];
-//    $id = $_SESSION['userid'];
-//
-//    if(isset($_POST['addCardBtn'])){
-//        $cardHolder = $_POST['cardHolder'];
-//        $cardNo = $_POST['cardNo'];   
-//        $cardType = $_POST['cardType'];
-//        $expiryDate = $_POST['expiryDate']; 
-//
-//        // $existSql = "SELECT * FROM card WHERE CardNumber = '$cardNo' ";
-//
-//        // $existSqlStmt = $conn->prepare($existSql); //SQL Statement in here
-//        // $existSqlStmt->execute();
-//        // $result = $existSqlStmt->fetch(PDO::FETCH_ASSOC);
-//
-//        // $count = $existSqlStmt->rowCount(); //Count the number of column in the statement
-//
-//        $addCardSql = "INSERT INTO card(CardNumber, CardHolder, ExpiryDate, CardType, UserID) " . 
-//            "VALUES( $cardNo, '$cardHolder', '$expiryDate', '$cardType', $id)";
-//        // $conn->exec($addCardSql);
-//
-//        try {
-//            // use exec() because no results are returned
-//            $conn->exec($addCardSql);
-//            echo "New record created successfully";
-//            }
-//        catch(PDOException $e)
-//            {
-//            echo $addCardSql . "<br>" . $e->getMessage();
-//            }
-//
-//        // if ($count <= 0){ 
-//            
-//            // echo "<script type='text/javascript'>alert('Card has been added.');</script>";
-//        // }else{
-//            // echo "<script type='text/javascript'>alert('Error: This card already exists!');</script>";
-//        // }
-//    }
-    
-
-
-?>
+<?php include('header.php'); ?>
 
 <div class="wrapper">
     <?php include('sidebar.php'); ?>
@@ -81,65 +33,45 @@
                             </div>
                             <div class="card-content">
                                 <div class="table-responsive">
-                                    <table class="table">
+                                    <table id="tblHistory" class="table table-bordered table-hover">
                                         <thead>
+                                            <tr id="ddlHistory" class="text-success">
+                                                <th rowspan="2">Job No.</th>
+                                                <th></th>
+                                                <th rowspan="2">Start Time</th>
+                                                <th rowspan="2">End Time</th>
+                                                <th rowspan="2">Location</th>
+                                                <th rowspan="2">Travel Time</th>
+                                                <th rowspan="2">Job Payout</th>
+                                            </tr>
                                             <tr class="text-success">
-                                                <th>Job No.</th>
                                                 <th>Fault Type</th>
-                                                <th>Start Time</th>
-                                                <th>End Time</th>
-                                                <th>Location</th>
-                                                <th>Travel Time</th>
-                                                <th>Job Payout</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php 
-//                                                $retrieveDataQuery = "SELECT * FROM card WHERE UserID = $id ";
-//                                                 echo $retrieveDataQuery;
-//                                                $retrieveData = $conn->prepare($retrieveDataQuery);
-//                                                $retrieveData->execute();
-//                                                $retrieveCount = $retrieveData->rowCount();
-//                                                 echo $retrieveCount;
-//                                                if ($retrieveData->rowCount() > 0) {
-//                                                    foreach ($retrieveData->fetchAll() as $row) {
-//                                                        ?>
-                                                        <tr>
-                                                            <td><?php echo $row['CardHolder']  ?></td>
-                                                            <td><?php echo $row['CardType']    ?></td>
-                                                            <td><?php echo $row['CardNumber']  ?></td>
-                                                            <td><?php echo $row['ExpiryDate']  ?></td>
-                                                        </tr>
-                                                        <?php
-//                                                    }
-//                                                    
-//                                                } else {
-//                                                    ?>
-                                                    <tr>
-                                                        <th>Job No.</th>
-                                                        <th>Fault Type</th>
-                                                        <th>Start Time</th>
-                                                        <th>End Time</th>
-                                                        <th>Location</th>
-                                                        <th>Travel Time</th>
-                                                        <th>Job Payout</th>
-                                                    </tr>
-                                                   <?php
-//                                                }                                               
-//                                            ?>
+<!--                                            <tr>
+                                                <td><?php echo $row['CardHolder']  ?></td>
+                                                <td><?php echo $row['CardType']    ?></td>
+                                                <td><?php echo $row['CardNumber']  ?></td>
+                                                <td><?php echo $row['ExpiryDate']  ?></td>
+                                            </tr>-->
+                                            <tr>
+                                                <th>0001</th>
+                                                <th>Type 5</th>
+                                                <th>Start Time</th>
+                                                <th>End Time</th>
+                                                <th>Princeton Road</th>
+                                                <th>2H</th>
+                                                <th>$10,000</th>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
-<!--                                <div class="">
-                                    <a><button type="button" class="btn button" data-toggle="modal" data-target="#addCardModal"><i class="fa fa-plus" aria-hidden="true"></i> Add Card</button></a>
-                                </div>-->
                                 <div id="addCardModal" class="modal fade" role="dialog">
                                     <div class="modal-dialog">
                                         <!-- Modal content-->
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <!--<button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Modal Header</h4>-->
                                                 <h4 class="modal-title">Add a card</h4>
                                                 <p><small>Enter your card details below</small></p>
                                             </div>
@@ -173,12 +105,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <!-- <div class="col-md-6">
-                                                            <div class="form-group label-floating">
-                                                                <label for class="control-label">CV2</label>
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div> -->
                                                         <div class="col-md-6">
                                                             <div class="form-group label-floating">
                                                                 <label for="expiryDate" class="control-label">Expiry Date</label>
@@ -206,21 +132,4 @@
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container-fluid">        
-        <p class="copyright pull-right">
-            &copy;
-            <script>
-                document.write(new Date().getFullYear())
-            </script>
-            The SWEG way of life.
-        </p>
-    </div>
-</footer>
-
-<?php
-    include('footer.php');
-//} else {
-//    echo "You are not authorized to view this page.";
-//}
-?>
+<?php include('footer.php'); ?>

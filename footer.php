@@ -100,7 +100,13 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
                 "sSearch": "Search all columns:"
             }
         });
-
+        
+        var dtTableHistory = $('#tblHistory').dataTable({
+            "oLanguage": {
+                "sSearch": "Search all columns:"
+            }
+        });
+        
         /* Specifying while column to put filter ddl */
         /* fnGetColumnData = Return array of values from the wanted column */
         var indexOfMyCol = 5; //6th column
@@ -109,6 +115,18 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
                 this.innerHTML = fnCreateOption(dtTable.fnGetColumnData(i));
                 $('select', this).change(function () {
                     dtTable.fnFilter($(this).val(), i);
+                });
+            }
+        });
+        
+        /* Specifying while column to put filter ddl */
+        /* fnGetColumnData = Return array of values from the wanted column */
+        var indexOfMyColHistory = 1; //6th column
+        $("#ddlHistory th").each(function (i) {
+            if (i === indexOfMyColHistory) {
+                this.innerHTML = fnCreateOption(dtTableHistory.fnGetColumnData(i));
+                $('select', this).change(function () {
+                    dtTableHistory.fnFilter($(this).val(), i);
                 });
             }
         });
