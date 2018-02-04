@@ -33,20 +33,12 @@
                     <p>Dashboard</p>
                 </a>
             </li>
-
-            <li <?php if (strpos($_SERVER['SCRIPT_NAME'], 'jobs.php') !== false) : ?>class="active"<?php endif; ?>>
-                <a href="jobs.php">
-                    <i class="fa fa-folder-open" aria-hidden="true"></i>
-                    <p>Jobs</p>
-                </a>
-            </li>
             <li <?php if (strpos($_SERVER['SCRIPT_NAME'], 'maps.php') !== false) : ?>class="active"<?php endif; ?>>
                 <a href="maps.php">
                     <i class="fa fa-compass" aria-hidden="true"></i>
                     <p>Locations</p>
                 </a>
             </li>
-            <!-- Fiona insert your job tab file-->
             <li <?php if (strpos($_SERVER['SCRIPT_NAME'], 'jobs.php') !== false) : ?>class="active"<?php endif; ?>>
                 <a href="jobs.php">
                     <i class="fa fa-users" aria-hidden="true"></i>
