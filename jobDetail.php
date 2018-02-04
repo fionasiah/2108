@@ -86,7 +86,7 @@
                                                         <div class="col-md-4 col-md-offset-1">
                                                             <div class="form-group label-floating">
                                                                 <label class="control-label">Contact Number</label>
-                                                                <input type="number" name="contact" class="form-control" value="1234-5678" disabled>
+                                                                <input type="number" name="contact" class="form-control" value="12345678" disabled>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-4 col-md-offset-2">
@@ -228,7 +228,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                                         <div class="col-md-4 col-md-offset-1">
                                                             <div class="form-group label-floating">
                                                                 <label class="control-label">Contact Number</label>
-                                                                <input type="number" name="contact" class="form-control" value="1234-5678" disabled>
+                                                                <input type="number" name="contact" class="form-control" value="12345678" disabled>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-4 col-md-offset-2">
@@ -297,7 +297,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                                         <div class="col-md-4 col-md-offset-1">
                                                             <div class="form-group label-floating">
                                                                 <label class="control-label">Contact Number</label>
-                                                                <input type="number" name="contact" class="form-control" value="1234-5678" disabled>
+                                                                <input type="number" name="contact" class="form-control" value="12345678" disabled>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-4 col-md-offset-2">
