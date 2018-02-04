@@ -1,5 +1,13 @@
-<?php
+<?php 
 include('header.php');
+
+function jobs($jobId) {
+    //include("db.php");
+    $jobQUERY = "SELECT * FROM jobs WHERE jobId = $jobId";
+    $jobRESULT = mysqli_query($conn, $jobQUERY) or die(mysqli_error($conn));
+    $row = mysqli_fetch_assoc($jobRESULT);
+    return $row['jobId'];
+}
 ?>
 
 <div class="wrapper">
@@ -52,30 +60,20 @@ include('header.php');
                                 </thead>
                                 <tbody>
                                     <tr>
+<!--                                        <td id = "showurgency<?//php echo $row['jobId'] ?>"><?//php echo $row['urgency'] ?></td>
+                                        <td id = "showengineerName<?//php echo $row['jobId'] ?>"> <?//php echo $row['engineerName'] ?></td>
+                                        <td id = "showlocation<?//php echo $row['jobId'] ?>"> <?//php echo $row['location'] ?></td>
+                                        <td><a href="jobDetail.php?jobid=<?//php echo $row1['jobId']; ?>"><?//php echo $row1['jobNumber']; ?></a></td>
+                                        <td id = "showtravelingtime<?//php echo $row['jobId'] ?>"><?//php echo $row1['travelingTime']; ?></td>
+                                        <td id = "showfaulttype<?//php echo $row['jobId'] ?>"><?//php echo $row1['faulttype']; ?></td>-->
                                         <td>Urgent</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>Tiger Nixon</td>
-                                        <td>1</td>
+                                        <td>John Doe</td>
+                                        <td>Princeton Road</td>
+                                        <td><a href="jobDetail.php?jobid=0001">0001</a></td>
+                                        <td>2 hours</td>
+                                        <td>Type 5</td>
+                                        
                                     </tr>
-                                    <tr>
-                                        <td>Urgent</td>
-                                        <td>Garrett Winters</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>63</td>
-                                        <td>3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Urgent</td>
-                                        <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
-                                        <td>66</td>
-                                        <td>2009/01/12</td>
-                                        <td>5</td>
-                                    </tr>
-
                                 </tbody>
                             </table>
                         </div>

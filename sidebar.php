@@ -1,4 +1,3 @@
-
 <div class="sidebar" data-color="green" data-image="assets/img/sidebar-3.jpg" style="max-width: 260px">
     <div class="logo">
         <a href="index.php" class="simple-text" style="max-width: 230px; left: 20px">
