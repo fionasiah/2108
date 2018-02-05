@@ -43,7 +43,7 @@ include('header.php');
                                     </div>
                                     <p class="category">Expected Expenditure</p>
                                     <h3 class="title dashboard-title">100<small><p><span class="badge">February</span>Current Month</p></small></h3>
-                                </div>                        
+                                </div>
                             </div>-->
                             <div class="card">
                                 <div class="card-header" data-background-color="green">
@@ -115,7 +115,7 @@ include('header.php');
 
 
                 <footer class="footer">
-                    <div class="container-fluid">        
+                    <div class="container-fluid">
                         <p class="copyright pull-right">
                             &copy;
                             <script>
@@ -224,4 +224,3 @@ include('header.php');
             options: chartOptions
         });
     </script>
-

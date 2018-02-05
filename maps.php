@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -8,6 +8,8 @@
 
 include('header.php');
     ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/google-direction.js"></script>
 
     <div class="wrapper">
         <?php include('sidebar.php'); ?>
@@ -41,7 +43,7 @@ include('header.php');
 
 
                 <footer class="footer">
-                    <div class="container-fluid">        
+                    <div class="container-fluid">
                         <p class="copyright pull-right">
                             &copy;
                             <script>
@@ -60,8 +62,10 @@ include('header.php');
 //        echo "You are not authorized to view this page.";
 //    }
     ?>
-
-    <script type="text/javascript">
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4dNkSAR94RnKv491aTmwgVXVy02Xvzes&callback=initMap">
+    </script>
+    <!-- <script type="text/javascript">
         function myMap() {
         var gMaps= {
             center:new google.maps.LatLng(51.508742,-0.120850),
@@ -70,9 +74,5 @@ include('header.php');
         var map=new google.maps.Map(document.getElementById("googleMap"),gMaps);
         }
     </script>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI5ThgQS5CxpTEi6qvdEmOcDMtujZ5vzk&callback=myMap"></script>
 
-
-
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI5ThgQS5CxpTEi6qvdEmOcDMtujZ5vzk&callback=myMap"></script> -->
