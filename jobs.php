@@ -43,44 +43,44 @@ function jobs($jobId) {
                         </div>
                         <div class="card-content">
                             <form method="POST">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <!--Table-->
-                            <table id="tblJobs" class="table table-bordered table-hover">
-                                <thead>
-                                    <tr id="ddlJobs"  class="text-success">
-                                        <th rowspan="2">Urgency</th>
-                                        <th rowspan="2">Engineer Name</th>
-                                        <th rowspan="2">Location</th>
-                                        <th rowspan="2">Job Number</th>
-                                        <th rowspan="2">Traveling Time</th>
-                                        
-                                        <!--For filter bar-->
-                                        <th></th>
-                                    </tr>
-                                    <tr class="text-success">
-                                        <th>Fault Type</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-<!--                                        <td id = "showurgency<?//php echo $row['jobId'] ?>"><?//php echo $row['urgency'] ?></td>
-                                        <td id = "showengineerName<?//php echo $row['jobId'] ?>"> <?//php echo $row['engineerName'] ?></td>
-                                        <td id = "showlocation<?//php echo $row['jobId'] ?>"> <?//php echo $row['location'] ?></td>
-                                        <td><a href="jobDetail.php?jobid=<?//php echo $row1['jobId']; ?>"><?//php echo $row1['jobNumber']; ?></a></td>
-                                        <td id = "showtravelingtime<?//php echo $row['jobId'] ?>"><?//php echo $row1['travelingTime']; ?></td>
-                                        <td id = "showfaulttype<?//php echo $row['jobId'] ?>"><?//php echo $row1['faulttype']; ?></td>-->
-                                        <td>Urgent</td>
-                                        <td>John Doe</td>
-                                        <td>Princeton Road</td>
-                                        <td><a href="jobDetail.php?jobid=0001">0001</a></td>
-                                        <td>2 hours</td>
-                                        <td>Type 5</td>
-                                        
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </form>
+                                <div class="table-responsive col-md-12 col-sm-12 col-xs-12">
+                                    <!--Table-->
+                                    <table id="tblJobs" class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr id="ddlJobs"  class="text-success">
+                                                <th rowspan="2">Urgency</th>
+                                                <th rowspan="2">Engineer Name</th>
+                                                <th rowspan="2">Location</th>
+                                                <th rowspan="2">Job Number</th>
+                                                <th rowspan="2">Traveling Time</th>
+
+                                                <!--For filter bar-->
+                                                <th></th>
+                                            </tr>
+                                            <tr class="text-success">
+                                                <th>Fault Type</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+        <!--                                        <td id = "showurgency<?//php echo $row['jobId'] ?>"><?//php echo $row['urgency'] ?></td>
+                                                <td id = "showengineerName<?//php echo $row['jobId'] ?>"> <?//php echo $row['engineerName'] ?></td>
+                                                <td id = "showlocation<?//php echo $row['jobId'] ?>"> <?//php echo $row['location'] ?></td>
+                                                <td><a href="jobDetail.php?jobid=<?//php echo $row1['jobId']; ?>"><?//php echo $row1['jobNumber']; ?></a></td>
+                                                <td id = "showtravelingtime<?//php echo $row['jobId'] ?>"><?//php echo $row1['travelingTime']; ?></td>
+                                                <td id = "showfaulttype<?//php echo $row['jobId'] ?>"><?//php echo $row1['faulttype']; ?></td>-->
+                                                <td>Urgent</td>
+                                                <td>John Doe</td>
+                                                <td>Princeton Road</td>
+                                                <td><a href="jobDetail.php?jobid=0001">0001</a></td>
+                                                <td>2 hours</td>
+                                                <td>Type 5</td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     
