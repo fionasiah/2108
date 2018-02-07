@@ -109,7 +109,7 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
         
         /* Specifying while column to put filter ddl */
         /* fnGetColumnData = Return array of values from the wanted column */
-        var indexOfMyCol = 5; //6th column
+        var indexOfMyCol = 6; //7th column
         $("#ddlJobs th").each(function (i) {
             if (i === indexOfMyCol) {
                 this.innerHTML = fnCreateOption(dtTable.fnGetColumnData(i));
@@ -121,7 +121,7 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
         
         /* Specifying while column to put filter ddl */
         /* fnGetColumnData = Return array of values from the wanted column */
-        var indexOfMyColHistory = 1; //6th column
+        var indexOfMyColHistory = 1; //2nd column
         $("#ddlHistory th").each(function (i) {
             if (i === indexOfMyColHistory) {
                 this.innerHTML = fnCreateOption(dtTableHistory.fnGetColumnData(i));
