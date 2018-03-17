@@ -52,6 +52,7 @@ function jobs($jobId) {
                                                 <th rowspan="2">Engineer Name</th>
                                                 <th rowspan="2">Location</th>
                                                 <th rowspan="2">Job Number</th>
+                                                <th rowspan="2">Job Status</th>
                                                 <th rowspan="2">Traveling Time</th>
 
                                                 <!--For filter bar-->
@@ -73,9 +74,20 @@ function jobs($jobId) {
                                                 <td>John Doe</td>
                                                 <td>Princeton Road</td>
                                                 <td><a href="jobDetail.php?jobid=0001">0001</a></td>
+                                                <td>Unassigned</td>
                                                 <td>2 hours</td>
                                                 <td>Type 5</td>
 
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Urgent</td>
+                                                <td>Sara Mara</td>
+                                                <td>Princeton Road</td>
+                                                <td><a href="jobDetail.php?jobid=0002">0002</a></td>
+                                                <td>Completed</td>
+                                                <td>2 hours</td>
+                                                <td>Type 10</td>
                                             </tr>
                                         </tbody>
                                     </table>
