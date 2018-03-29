@@ -1,13 +1,5 @@
 <?php 
 include('header.php');
-
-function jobs($jobId) {
-    //include("db.php");
-    $jobQUERY = "SELECT * FROM jobs WHERE jobId = $jobId";
-    $jobRESULT = mysqli_query($conn, $jobQUERY) or die(mysqli_error($conn));
-    $row = mysqli_fetch_assoc($jobRESULT);
-    return $row['jobId'];
-}
 ?>
 
 <div class="wrapper">
