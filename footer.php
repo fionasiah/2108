@@ -101,7 +101,19 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
             }
         });
         
+        var dtTablePending = $('#tblPendingJobs').dataTable({
+            "oLanguage": {
+                "sSearch": "Search all columns:"
+            }
+        });
+        
         var dtTableHistory = $('#tblHistory').dataTable({
+            "oLanguage": {
+                "sSearch": "Search all columns:"
+            }
+        });
+        
+        var dtTableEngineers = $('#tblEngineers').dataTable({
             "oLanguage": {
                 "sSearch": "Search all columns:"
             }
@@ -109,7 +121,7 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
         
         /* Specifying while column to put filter ddl */
         /* fnGetColumnData = Return array of values from the wanted column */
-        var indexOfMyCol = 6; //7th column
+        var indexOfMyCol = 5; //6th column
         $("#ddlJobs th").each(function (i) {
             if (i === indexOfMyCol) {
                 this.innerHTML = fnCreateOption(dtTable.fnGetColumnData(i));
@@ -127,6 +139,30 @@ $('.panel-group').on('shown.bs.collapse', toggleIcon);
                 this.innerHTML = fnCreateOption(dtTableHistory.fnGetColumnData(i));
                 $('select', this).change(function () {
                     dtTableHistory.fnFilter($(this).val(), i);
+                });
+            }
+        });
+        
+        /* Specifying while column to put filter ddl */
+        /* fnGetColumnData = Return array of values from the wanted column */
+        var indexOfMyColEngineer = 1; //2nd column
+        $("#ddlEngineers th").each(function (i) {
+            if (i === indexOfMyColEngineer) {
+                this.innerHTML = fnCreateOption(dtTableEngineers.fnGetColumnData(i));
+                $('select', this).change(function () {
+                    dtTableEngineers.fnFilter($(this).val(), i);
+                });
+            }
+        });
+        
+        /* Specifying while column to put filter ddl */
+        /* fnGetColumnData = Return array of values from the wanted column */
+        var indexOfMyColPending = 6; //7th column
+        $("#ddlPendingJobs th").each(function (i) {
+            if (i === indexOfMyColPending) {
+                this.innerHTML = fnCreateOption(dtTablePending.fnGetColumnData(i));
+                $('select', this).change(function () {
+                    dtTablePending.fnFilter($(this).val(), i);
                 });
             }
         });

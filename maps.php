@@ -29,7 +29,7 @@ include('header.php');
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <?php include('logout.php'); ?>
+                                <?php include('welcome.php'); ?>
                             </li>
                         </ul>
                     </div>
