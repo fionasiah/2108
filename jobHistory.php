@@ -17,7 +17,9 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <?php include('welcome.php'); ?>
+                        <li>
+                            <?php include('welcome.php'); ?>
+                        </li>
                     </ul>
                 </div>
             </div>
