@@ -56,7 +56,7 @@ include('header.php');
                                         <tbody>
                                             <tr>
                                                 <td class="danger">1 - Urgent</td>
-                                                <td>Princeton Road</td>
+                                                <td>Edinburgh</td>
                                                 <td><a href="jobDetail.php?jobid=#0100">#0100</a></td>
                                                 <td>Unassigned</td>
                                                 <td>2 hours</td>
@@ -65,7 +65,7 @@ include('header.php');
                                             
                                             <tr>
                                                 <td class="danger">1 - Urgent</td>
-                                                <td>Queenstown Road</td>
+                                                <td>Edinburgh</td>
                                                 <td><a href="jobDetail.php?jobid=#0101">#0101</a></td>
                                                 <td>Unassigned</td>
                                                 <td>2 hours</td>
@@ -74,7 +74,7 @@ include('header.php');
                                             
                                             <tr>
                                                 <td class="warning">2 - Average</td>
-                                                <td>Dover Road</td>
+                                                <td>Kirkwall</td>
                                                 <td><a href="jobDetail.php?jobid=#0102">#0102</a></td>
                                                 <td>Unassigned</td>
                                                 <td>2 hours</td>
@@ -83,7 +83,7 @@ include('header.php');
                                             
                                             <tr>
                                                 <td class="warning">2 - Average</td>
-                                                <td>Pasir Ris</td>
+                                                <td>Elgin</td>
                                                 <td><a href="jobDetail.php?jobid=#0103">#0103</a></td>
                                                 <td>Unassigned</td>
                                                 <td>2 hours</td>
@@ -92,7 +92,7 @@ include('header.php');
                                             
                                             <tr>
                                                 <td class="success">3 - Normal</td>
-                                                <td>Yio Chu Kang</td>
+                                                <td>Fort William</td>
                                                 <td><a href="jobDetail.php?jobid=#0105">#0105</a></td>
                                                 <td>Unassigned</td>
                                                 <td>2 hours</td>

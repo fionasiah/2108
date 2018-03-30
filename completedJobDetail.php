@@ -140,6 +140,22 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                                     </div>
                                                 </div>
                                                 <div class="row">
+                                                    <div class="col-md-10 col-md-offset-1">
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Location</label>
+                                                            <input type="text" name="jobId" class="form-control" value="Edinburgh" disabled>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-10 col-md-offset-1">
+                                                        <div class="form-group label-floating">
+                                                            <label class="control-label">Address</label>
+                                                            <input type="text" name="jobId" class="form-control" value="Castlehill, Edinburgh EH1 2NG, UK" disabled>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
                                                     <div class="col-md-4 col-md-offset-1">
                                                         <div class="form-group label-floating">
                                                             <label class="control-label">Urgency</label>

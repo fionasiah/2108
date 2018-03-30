@@ -66,7 +66,7 @@ function jobs($jobId) {
                                             <tr>
                                                 <td class="danger">1 - Urgent</td>
                                                 <td>John Doe</td>
-                                                <td>Princeton Road</td>
+                                                <td>Edinburgh</td>
                                                 <td><a href="pendingJobDetail.php?jobid=#0051">#0051</a></td>
                                                 <td>Pending</td>
                                                 <td>2 hours</td>
@@ -76,7 +76,7 @@ function jobs($jobId) {
                                             <tr>
                                                 <td class="danger">1 - Urgent</td>
                                                 <td>David Jarvis</td>
-                                                <td>Clarence Road</td>
+                                                <td>Edinburgh</td>
                                                 <td><a href="pendingJobDetail.php?jobid=#0052">#0052</a></td>
                                                 <td>Pending</td>
                                                 <td>2 hours</td>
@@ -86,7 +86,7 @@ function jobs($jobId) {
                                             <tr>
                                                 <td class="warning">2 - Average</td>
                                                 <td>Samuel James</td>
-                                                <td>Dover Drive</td>
+                                                <td>Dumfries</td>
                                                 <td><a href="pendingJobDetail.php?jobid=#0053">#0053</a></td>
                                                 <td>Pending</td>
                                                 <td>2 hours</td>
@@ -96,7 +96,7 @@ function jobs($jobId) {
                                             <tr>
                                                 <td class="success">3 - Normal</td>
                                                 <td>Joel Jarvis</td>
-                                                <td>Fwahla Tone Road</td>
+                                                <td>Kirkwall</td>
                                                 <td><a href="pendingJobDetail.php?jobid=#0054">#0054</a></td>
                                                 <td>Pending</td>
                                                 <td>2 hours</td>
@@ -106,7 +106,7 @@ function jobs($jobId) {
                                             <tr>
                                                 <td class="success">3 - Normal</td>
                                                 <td>James Writes</td>
-                                                <td>Balestier Road</td>
+                                                <td>Kirkwall</td>
                                                 <td><a href="pendingJobDetail.php?jobid=#0055">#0055</a></td>
                                                 <td>Pending</td>
                                                 <td>2 hours</td>

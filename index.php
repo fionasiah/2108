@@ -126,19 +126,33 @@ include('footer.php');
         type: 'doughnut',
                 data: {
                 datasets: [{
-                data: [55, 35, 15]
+                data: [55, 35, 15, 30, 20, 50, 93, 76, 69, 10]
                 ,
                         backgroundColor: [
-                                '#26c6da',
-                                '#ffa726',
-                                '#ab47bc',
+                                '#011f4b',
+                                '#03396c',
+                                '#005b96',
+                                '#6497b1',
+                                '#b3cde0',
+                                '#011f4b',
+                                '#03396c',
+                                '#005b96',
+                                '#6497b1',
+                                '#b3cde0',
                         ],
                         label: 'Dataset 1'
                 }],
                         labels: [
-                                "Mechanical",
-                                "Electrical",
-                                "Telecommunication",
+                                "Type 1",
+                                "Type 2",
+                                "Type 3",
+                                "Type 4",
+                                "Type 5",
+                                "Type 6",
+                                "Type 7",
+                                "Type 8",
+                                "Type 9",
+                                "Type 10",
                         ]
                 },
                 options: {
